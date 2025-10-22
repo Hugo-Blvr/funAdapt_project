@@ -678,7 +678,7 @@ def execut(data):
     te_df['ID'] = te_df.index
 
     
-    gene = False
+    gene = True
     if gene : 
         te_pathfile = data['gene_path']
         te_df = pd.read_csv(te_pathfile, sep='\t')
