@@ -1,0 +1,27 @@
+# Example configuration file for inversion benchmark analysis
+# Copy this file to config.yaml and adjust paths as needed
+
+input:
+  paths:
+    inversions:
+      cactus: /path/to/your/INV_out_maf_AllPd_aligned_clean.tsv
+      syri_minimap2: /path/to/your/INV_inv_call_minimap_clean.tsv
+      syri_nucmer: /path/to/your/INV_inv_call_nucmer_clean.tsv
+    lineages: /path/to/your/LINEAGE.txt
+    chr_lengths: /path/to/your/chr_len.tsv
+    te_pathfile: /path/to/your/TE.tsv
+    gene_pathfile: /path/to/your/GENE.tsv
+    outpath: /path/to/your/output
+
+  colors:
+    inversions_colors:
+      syri_minimap2: "#082dcf"
+      syri_nucmer: "#4287f5"
+      cactus: "#ff8045"
+
+    lineages_colors:
+      Pd1: "#7f69ff"
+      Pd2: "#7a42fc"
+      other: "#808080"
+
+  iso_ref: ["Gd_00708-ba"]
