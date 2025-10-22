@@ -1,0 +1,33 @@
+{
+  "input": {
+    "excluded_chromosomes": ["chr2003", "chr2016", "chr2017"]
+  },
+  "filtering": {
+    "min_inversion_size": 150
+  },
+  "merging": {
+    "reciprocal_overlap_ratio": 0.85,
+    "fusion_gap_threshold": 150
+  },
+  "clustering": {
+    "spatial_bucket_size": 50000,
+    "min_overlap_ratio": 0.85
+  },
+  "te_filtering": {
+    "enabled": true,
+    "overlap_threshold": 90.0,
+    "te_file": "/path/to/your/TE.tsv"
+  },
+  "lineage": {
+    "enabled": true,
+    "lineage_file": "/path/to/your/LINEAGE.txt"
+  },
+  "performance": {
+    "n_cores": null
+  },
+  "output": {
+    "save_nofilter": true,
+    "save_wTE": true,
+    "save_TE_files": true
+  }
+}
